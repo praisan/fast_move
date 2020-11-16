@@ -7,6 +7,8 @@ public class FastMove {
     
     private FastBike[] fastBikes;
     private Person[] person;
+    
+    
 
     
 }
