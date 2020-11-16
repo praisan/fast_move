@@ -1,7 +1,7 @@
 package base;
 
 public class Bike {
-    private String licensePlate;
+    private static String licensePlate;
     private int engineCapacity;
 
     public Bike(String licensePlate, int engineCapacity) {
