@@ -1,5 +1,6 @@
 
 /* 
+1.
 ใน class ToyData
 1. สร้าง Bike เก็บไว้ 3 bike
 2. สร้าง Person เก็บไว้ 3 persons
@@ -7,6 +8,7 @@
 */
 
 /* 
+2.
 ใน class FastMoveConsoleApplication
 1. สร้าง method เพื่อรับค่ามาสร้าง Bike 1 Bike
 2. สร้าง method เพื่อรับค่ามาสร้าง Person 1 Person
@@ -14,11 +16,13 @@
 */
 
 /* 
+3.
 ใน class FastMoveConsoleApplication
 1. สร้าง Menu เพื่อใช้ในการเลือกทำงาน
 */
 
 /* 
+4.
 ใน class FastMove
 1. สร้าง method เพื่อเพิ่ม Bike
 2. สร้าง method เพื่อเพิ่ม Person
