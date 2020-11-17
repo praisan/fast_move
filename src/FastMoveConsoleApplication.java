@@ -9,14 +9,35 @@ import java.util.Scanner;
 public class FastMoveConsoleApplication {
 
     public static void main(String[] args) {
-        Bike testBike = inputBike();
-        System.out.println(testBike.toString());
-        
-        Person testPerson=inputPerson() ;
-        System.out.println(testPerson.toString());
-        
-        Parcel parcel=inputParcel();
-        System.out.println(parcel.toString());
+        //ReadMe 3.1 สร้าง Menu เพื่อใช้ในการเลือกทำงาน
+        String menu = "Select\n"
+                + "1. input Bike\n"
+                + "2. input Person\n"
+                + "3. input Parcel\n"
+                + "0. exit";
+        Scanner input = new Scanner(System.in);
+        int select=0;
+        do {
+            System.out.println(menu);
+            System.out.print("Select: ");
+            select = input.nextInt();
+            input.nextLine();
+            switch (select) {
+                case 1:
+                    Bike testBike = inputBike();
+                    System.out.println(testBike.toString());
+                    break;
+                case 2:
+                    Person testPerson = inputPerson();
+                    System.out.println(testPerson.toString());
+                    break;
+                case 3:
+                    Parcel parcel = inputParcel();
+                    System.out.println(parcel.toString());
+                    break;
+            }
+
+        }while(select!=0);
 
     }
 
@@ -41,6 +62,7 @@ public class FastMoveConsoleApplication {
         String sername = input.nextLine();
         return new Person(name, sername);
     }
+
     public static Parcel inputParcel() {
         //ReadMe 2.3 สร้าง method เพื่อรับค่ามาสร้าง Parcel 1 Parcel
         Scanner input = new Scanner(System.in);
@@ -51,7 +73,7 @@ public class FastMoveConsoleApplication {
         double latitude = input.nextDouble();
         System.out.print("Longitude:");
         double longitude = input.nextDouble();
-        return new Parcel(weight, ParcelStatus.READY_TO_SHIP,new Location(latitude,longitude));
+        return new Parcel(weight, ParcelStatus.READY_TO_SHIP, new Location(latitude, longitude));
     }
-    
+
 }
