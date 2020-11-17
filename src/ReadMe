@@ -25,11 +25,10 @@
 4.
 ใน class FastMove
 1. สร้าง method เพื่อเพิ่ม Bike
-2. สร้าง method เพื่อเพิ่ม Person
+--2. สร้าง method เพื่อเพิ่ม Person (ไม่ต้องทำ)--
 
 3. สร้าง method เพื่อเพิ่ม Percel ให้ Bike ที่รุบุได้ผ่าน index
 
 4. สร้าง method เพื่อนำ Percel ออกมาจาก Bike ที่รุบุได้ผ่าน index
-5. สร้าง method เพื่อนำ Percel ออกมาจาก Bike ที่รุบุได้ผ่าน index
 5. สร้าง method เพื่อค้นหา Person จาก Bike ได้โดยคืนค่าเป็น Person หากเจอ หรือ null หากไม่เจอ
 */
