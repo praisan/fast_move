@@ -14,6 +14,9 @@ public class FastMoveConsoleApplication {
         
         Person testPerson=inputPerson() ;
         System.out.println(testPerson.toString());
+        
+        Parcel parcel=inputParcel();
+        System.out.println(parcel.toString());
 
     }
 
